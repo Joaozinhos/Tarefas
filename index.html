@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lembrete de Tarefas (7 Dias)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i data-lucide="bell-ring"></i> Lembrete de Tarefas - 7 Dias</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Digite sua tarefa..." required />
+      <button type="submit"><i data-lucide="plus-circle"></i> Adicionar</button>
+    </form>
+
+    <div id="tasks-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons(); // Renderizar ícones
+  </script>
+</body>
+</html>
